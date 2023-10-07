@@ -1,0 +1,84 @@
+*{
+  font-family: 'karla';
+  margin-bottom: 0;
+}
+footer {
+  background-color: #495e57;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Alignez le contenu verticalement au centre */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Ajoutez du style aux sections du footer si nécessaire */
+
+.footer-content div {
+  flex: 1; /* Faites en sorte que chaque section occupe le même espace horizontal */
+  text-align: left; /* Alignez le texte à gauche */
+  margin: 0 1rem; /* Ajoutez de la marge entre les sections */
+  display:  inline-block;
+}
+
+.footer-content h2 {
+  font-size: 25px;
+}
+.footer-content h2:hover{
+  color: #f4ce14;
+}
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  
+}
+
+.footer-content ul li {
+  margin-bottom: 0.5rem;
+  font-size: 20px;
+  
+}
+
+.footer-content a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.social-media ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.social-media li {
+  margin: 0 0.5rem 0 0;
+}
+
+
+.footerImg{
+  width: 5rem;
+  margin: 10px;
+}
+.navigation{
+  list-style-type: disc; /* Utilisez 'disc' pour les puces rondes, 'circle' pour les cercles vides, ou 'square' pour les carrés vides */
+  padding-left: 20px;
+}
+
+.social-media img {
+  width: 30px; /* Ajustez la taille de l'icône selon vos préférences */
+  height: 30px; /* Ajustez la taille de l'icône selon vos préférences */
+  border: none; /* Supprimez les bordures par défaut */
+  cursor: pointer; /* Ajoutez un curseur au survol */
+  margin:1rem;
+  transition: transform 0.3s;
+}
+.social-media img:hover {
+  transform: translateY(-10px); 
+}

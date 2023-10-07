@@ -1,15 +1,16 @@
-import logo from './logo.svg';
+
 import './App.css';
-import 
+import HomePage from './pages/HomePage';
+import AboutUs from './pages/AboutUs'
+import  Footer1 from './components/Footer/Footer';
 
 function App() {
   return (
     <>
-    <header></header>
-    <nav></nav>
-    <main></main>
-    <footer></footer>
+     <AboutUs>
+    </AboutUs>
     </>
+
     );
 }
 

@@ -1,0 +1,88 @@
+
+.specials{
+    margin:5%;
+}
+.specials_1 {
+    display: flex; 
+    justify-content: space-between;
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    align-items: center; 
+    width: 100%;
+    
+  }
+  
+  .specials_1 h1, .specials_1 button {
+    margin:5%; /* Ajoute de l'espace autour du titre et du bouton */
+  }
+  .specials_1 button{
+    font-size: 24px;
+    padding: 15px 30px;
+  }
+  .specials_2 .row {
+    display: flex; /* Utilisez Flexbox pour aligner les colonnes en ligne */
+    justify-content: space-between; /* Ajoute un espace égal entre les colonnes */
+    
+}
+  
+  .specials_2 .col {
+    flex: 1; /* Les colonnes occupent une part égale de l'espace disponible */
+    padding: 1rem; /* Ajoutez un espacement autour des colonnes */
+    text-align: center; /* Centrez le contenu horizontalement */
+    background-color: #eeeeec;
+    margin: 10px;;
+    border-radius: 10px;
+}
+  
+  .specials_2 .col img {
+    max-width: 100%; /* Ajustez la largeur maximale des images pour qu'elles s'adaptent */
+   border-radius: 2%;
+  
+}
+  .money{
+    color: orange;
+  }
+  .specials_2 .col h2 {
+    font-size: 20px; /* Ajustez la taille de la police du titre */
+  }
+  
+  .specials_2 .col button {
+    background-color: #ffffff; /* Couleur de fond du bouton */
+    color: rgb(0, 0, 0); /* Couleur du texte du bouton */
+    border: 2px solid #ffcc00;
+    padding: 10px 20px; /* Ajustez la taille du bouton */
+    border-radius: 5px; /* Supprimez la bordure du bouton */
+    cursor: pointer; /* Changez le curseur au survol */
+    transition: background-color 0.3s; /* Ajoutez une transition de couleur de fond */
+    text-transform: capitalize;
+}
+  
+  .specials_2 .col button:hover {
+    background-color: #eeeeec;
+    ; /* Couleur de fond au survol */
+  }
+  @media (max-width: 768px) {
+    .specials_2 .row {
+      flex-direction: column; /* Empilez les colonnes les unes sur les autres */
+      align-items: center; /* Centrez les colonnes horizontalement */
+    }
+  
+    .specials_2 .col {
+      flex: 1;
+      padding: 1rem;
+      text-align: center;
+      margin-bottom: 1rem; /* Ajoutez de l'espace entre les colonnes empilées */
+    }
+  }
+  
+  /* Styles pour les écrans de petite taille */
+  @media (max-width: 480px) {
+    .specials_2 .col h2 {
+      font-size: 18px; /* Réduisez la taille de la police pour les petits écrans */
+    }
+    
+    .specials_2 .col button {
+      font-size: 14px; /* Réduisez la taille du bouton pour les petits écrans */
+    }
+  }
+  

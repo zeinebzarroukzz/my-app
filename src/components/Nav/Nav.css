@@ -1,0 +1,66 @@
+
+.navbar {
+    background-color: rgb(255, 255, 255); /* Background color */
+    color: black; /* Text color */
+    display: flex; /* Flex layout for alignment */
+    justify-content: space-between; /* Space out logo and links */
+    align-items: center; /* Center vertically */
+    padding: 1rem 2rem; /* Add padding for spacing */
+    width: 100%;
+  }
+  
+  /* Logo styles */
+  .logo {
+    display: flex;
+    justify-content: start;
+    max-width: 100%;
+    width: 200px; /* Adjust the logo width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Navigation links */
+  .navLinks {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    list-style: none; /* Remove list bullets */
+    display: flex; /* Display links horizontally */
+    margin: 0; /* Remove default margin from ul element */
+    padding: 0; /* Remove default padding from ul element */
+  }
+  
+  .navLinks li {
+    margin: 0 1rem; /* Add spacing between links */
+  }
+  
+  .navLinks a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #000000; /* Link text color */
+    font-family: 'markazi';
+    font-weight: bolder;
+    font-size: 20px;
+  }
+  
+  /* Hover effect for links */
+  .navLinks a:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Stack elements vertically on small screens */
+      text-align: center; /* Center-align text on small screens */
+      padding: 1rem; /* Reduce padding for smaller screens */
+    }
+  
+    .navLinks {
+      margin-top: 1rem; /* Add margin to separate links on smaller screens */
+      justify-content: center; /* Center-align links on smaller screens */
+    }
+  
+    .navLinks li {
+      margin: 0.5rem 0; /* Add vertical spacing between links on smaller screens */
+    }
+  }
+  

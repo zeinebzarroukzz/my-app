@@ -1,0 +1,37 @@
+.content {
+    display: flex; /* Utilisez un modèle de boîte flex pour aligner le contenu */
+  flex-direction: column; /* Alignez les éléments en colonne */
+  align-items: center; /* Alignez horizontalement au centre */
+  justify-content: space-between;
+    background-image: url('../../assets/mediterranean-cuisine-2378758_1280.jpg');
+    background-size: cover; /* Ajuste la taille de l'image pour couvrir tout l'élément */
+    background-position:top; /* Centre l'image horizontalement et verticalement */
+    background-repeat: no-repeat;
+    color: #fff;
+    height:80vh;
+    padding: 20px; 
+}
+.content h1 {
+    font-family: 'regular';
+    font-size: 70px;
+    margin: 1rem; /* Supprimez la marge par défaut du titre */
+    padding: 0;
+    text-align: center; /* Centrez le texte horizontalement */
+  }
+  
+  .content section {
+    text-align: center; /* Centrez le texte horizontalement */
+    margin:2rem;
+}
+  
+  .content p {
+    font-family: 'Markazi Text';
+    font-size: 28px;
+    margin: 0 0 20px; /* Ajoutez une marge en bas pour les paragraphes */
+}
+.content .first{
+    color:black;
+    margin:4rem 0 0 4rem;
+    font-size: 35px;
+    margin-bottom: 5%;
+}
