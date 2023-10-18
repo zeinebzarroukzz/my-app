@@ -50,11 +50,14 @@ footer {
   text-decoration: none;
   color: #ffffff;
 }
-
+.social-media{
+  padding: 12px;
+}
 .social-media ul {
   display: flex;
   justify-content: center;
   padding: 0;
+
 }
 
 .social-media li {
@@ -65,7 +68,12 @@ footer {
 .footerImg{
   width: 5rem;
   margin: 10px;
+  transition: transform 0.2s;
 }
+.footerImg:hover{
+  transform: scale(1.2); 
+}
+
 .navigation{
   list-style-type: disc; /* Utilisez 'disc' pour les puces rondes, 'circle' pour les cercles vides, ou 'square' pour les carrés vides */
   padding-left: 20px;
@@ -82,3 +90,22 @@ footer {
 .social-media img:hover {
   transform: translateY(-10px); 
 }
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-content div {
+    margin: 1rem 0;
+  }
+
+  .social-media ul {
+    margin-top: 1rem;
+  }
+}
+
+
+
+
+

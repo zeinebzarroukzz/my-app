@@ -1,0 +1,96 @@
+*{
+  font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.formcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Pour centrer verticalement et horizontalement */
+  background-image: url('../../assets/brick-wall-1834784_1280.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+  
+  .formContainer {
+    text-align: left;
+    border: 3px solid rgba(245, 232, 59, 0.986);
+    background: #fafaf8ce;
+    width: 250px;
+    min-height: 300px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 9px 50px hsla(20, 48%, 81%, 0.651);
+    padding: 4%;
+    margin-bottom: 10px;/* Ombre légère */
+  }
+  
+  .formLogin {
+    display: flex;
+    flex-direction: column; /* Alignez les éléments en colonne */
+  }
+  
+  label {
+    font-weight: bold;
+    margin: 5px;
+    font-size: 20px;
+  }
+  
+  
+  input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+  
+  }
+  
+  #btn1 {
+    justify-content: center;
+    padding: 5%;
+    margin: 2px;
+    background-color: #f4ce14;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  #btn2{
+    justify-content: center;
+    padding: 5%;
+    margin: 2px;
+    background: #fafaf8ce;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  #btn1:hover,#btn2:hover{
+        background-color:rgb(240, 250, 100)
+    
+  }
+  .btnContainer{
+    padding: auto;
+    margin: 4px;
+  }
+  @media (max-width: 768px) {
+    /* Adjust styles for screens smaller than 768px */
+    .formContainer {
+      width: 60%; /* Make it nearly full width on smaller screens */
+      max-width: none; /* Remove the maximum width */
+    }
+  
+    label,
+    input {
+      font-size: 18px; /* Reduce font size for smaller screens */
+    }
+  
+    #btn1,
+    #btn2 {
+      font-size: 20px; /* Adjust button font size */
+    }
+  }

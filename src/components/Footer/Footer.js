@@ -9,10 +9,10 @@ const footer = () => {
     <>
     <footer>
   <div className='footer-content'>
-    <div>
+    <div className='col' >
       <img src={footerlogo} className='footerImg' alt="My Website Logo" />
     </div>
-    <div>
+    <div className='col'>
       <h2>Navigation:</h2>
       <ul >
         <li className='navigation'><a href="#">Home</a></li>
@@ -23,15 +23,15 @@ const footer = () => {
         <li className='navigation'><a href="/login">Login</a></li>
       </ul>
     </div>
-    <div>
-      <h2>Contactez-nous:</h2>
+    <div className='col'>
+      <h2>Contact Us:</h2>
       <ul>
         <li className='navigation'>Email : contact@example.com</li>
         <li className='navigation'>Téléphone : +123 456 789</li>
       </ul>
     </div>
     <div className="social-media">
-      <h2>Suivez-nous:</h2>
+      <h2>Follow Us:</h2>
       <div className='links'>
         <ul>
           <li><a href="https://twitter.com/"><img src={(twitter) } className='social_mediaImg'/></a></li>

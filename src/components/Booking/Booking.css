@@ -1,0 +1,92 @@
+*{
+  font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Pour centrer verticalement et horizontalement */
+  background-image: url('../../assets/food-366875_1280.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+#bookingForm {
+  text-align: left;
+  border: 3px solid rgba(245, 232, 59, 0.986);
+  background: #fafaf8ce;
+  width: 450px;
+  min-height: 560px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 9px 50px hsla(20, 48%, 81%, 0.651);
+  padding: 4%;
+  margin-bottom: 10px;
+}
+  h1{
+    margin: 20px;
+    font-size: 40px;
+    color: #fafaf8ce;
+  }
+  .infor{
+    margin: 3%;
+  }
+  /* Style labels */
+  label {
+    font-weight: bold;
+    margin: 5px;
+    font-size: 20px;
+  }
+  
+  /* Style input fields */
+  #name,
+  #email,
+  input[type="date"],
+  input[type="number"],
+  select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+    
+  }
+
+  .btnContainer{
+    display: flex;
+    flex-direction: column; /* Alignez les éléments en colonne */
+    align-items: center;
+    padding:10%;
+  }
+  
+  
+  #btn{
+    justify-content: center;
+    padding: 5%;
+    background-color: #f4ce14;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+
+  }
+  #btn:hover{
+    background-color:rgb(240, 250, 100)
+  }
+  @media (max-width: 768px) {
+    .container {
+      background-size: contain; /* Adjust background image for smaller screens */
+    }
+  
+    form {
+      width: 90%; /* Make the form width responsive */
+      margin: 0 auto; /* Center the form horizontally */
+    }
+  
+    h1 {
+      font-size: 30px; /* Reduce font size for smaller screens */
+    }
+  }
