@@ -1,19 +1,13 @@
-import React from 'react'
-import Nav from '../components/Nav/Nav'
-import Header from '../components/Header/Header'
-import Main from '../components/Main/Main'
-import Footer from '../components/Footer/Footer'
+import React from "react";
+import Header from "../components/Header/Header";
+import Main from "../components/Main/Main";
 function HomePage() {
   return (
     <>
-    <Nav></Nav>
-    <Header></Header>
-    <Main></Main>
-    <Footer></Footer>
-
-    
+      <Header></Header>
+      <Main></Main>
     </>
-  )
+  );
 }
 
-export default HomePage
+export default HomePage;
