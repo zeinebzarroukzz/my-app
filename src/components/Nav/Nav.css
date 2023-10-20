@@ -45,7 +45,9 @@
   .navLinks a:hover {
     text-decoration: underline; /* Add underline on hover */
   }
-  
+  .loginLink{
+    
+  }
   /* Responsive styles for smaller screens */
   @media (max-width: 768px) {
     .navbar {

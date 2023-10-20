@@ -3,7 +3,7 @@
   flex-direction: column; /* Alignez les éléments en colonne */
   align-items: center; /* Alignez horizontalement au centre */
   justify-content: space-between;
-    background-image: url('../../assets/mediterranean-cuisine-2378758_1280.jpg');
+    background-image: url('../../Images/restaurant.jpg');
     background-size: cover; /* Ajuste la taille de l'image pour couvrir tout l'élément */
     background-position:top; /* Centre l'image horizontalement et verticalement */
     background-repeat: no-repeat;

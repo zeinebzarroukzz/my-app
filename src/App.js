@@ -2,6 +2,7 @@ import "./App.css";
 import HomePage from "./pages/HomePage";
 import AboutUs from "./pages/AboutUs";
 import Booking from "./pages/Booking";
+import Menu from "./pages/Menu";
 import Login from "./pages/Login";
 import Footer from "./components/Footer/Footer";
 import Nav from "./components/Nav/Nav";
@@ -10,6 +11,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 const routes = [
   { path: "/", element: <HomePage /> },
   { path: "/about", element: <AboutUs /> },
+  { path: "/menu", element: <Menu /> },
   { path: "/booking", element: <Booking /> },
   { path: "/login", element: <Login /> },
 ];
