@@ -26,16 +26,16 @@
     
 }
   
-  .specials_2 .col {
+  .specials_2 .colmenu {
     flex: 1; /* Les colonnes occupent une part égale de l'espace disponible */
     padding: 1rem; /* Ajoutez un espacement autour des colonnes */
     text-align: center; /* Centrez le contenu horizontalement */
-    background-color: #eeeeec;
+    background-color: #00000027;
     margin: 10px;;
     border-radius: 10px;
 }
   
-  .specials_2 .col img {
+  .specials_2 .colmenu img {
     max-width: 100%; /* Ajustez la largeur maximale des images pour qu'elles s'adaptent */
    border-radius: 2%;
   
@@ -43,22 +43,23 @@
   .money{
     color: orange;
   }
-  .specials_2 .col h2 {
+  .specials_2 .colmenu h2 {
     font-size: 20px; /* Ajustez la taille de la police du titre */
   }
   
-  .specials_2 .col button {
+  .specials_2 .colmenu button {
     background-color: #ffffff; /* Couleur de fond du bouton */
     color: rgb(0, 0, 0); /* Couleur du texte du bouton */
     border: 2px solid #ffcc00;
-    padding: 10px 20px; /* Ajustez la taille du bouton */
+    padding: 15px 30px; /* Ajustez la taille du bouton */
+    margin: 5%;
     border-radius: 5px; /* Supprimez la bordure du bouton */
     cursor: pointer; /* Changez le curseur au survol */
     transition: background-color 0.3s; /* Ajoutez une transition de couleur de fond */
     text-transform: capitalize;
 }
   
-  .specials_2 .col button:hover {
+  .specials_2 .colmenu button:hover {
     background-color: #eeeeec;
     ; /* Couleur de fond au survol */
   }
@@ -68,7 +69,7 @@
       align-items: center; /* Centrez les colonnes horizontalement */
     }
   
-    .specials_2 .col {
+    .specials_2 .colmenu {
       flex: 1;
       padding: 1rem;
       text-align: center;
@@ -78,11 +79,11 @@
   
   /* Styles pour les écrans de petite taille */
   @media (max-width: 480px) {
-    .specials_2 .col h2 {
+    .specials_2 .colmenu h2 {
       font-size: 18px; /* Réduisez la taille de la police pour les petits écrans */
     }
     
-    .specials_2 .col button {
+    .specials_2 .colmenu button {
       font-size: 14px; /* Réduisez la taille du bouton pour les petits écrans */
     }
   }

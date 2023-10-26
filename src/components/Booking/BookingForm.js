@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Booking.css";
 
-const BookingForm = ({ availableTimes, updateTimes }) => {
+const BookingForm = ({ availableTimes, updateTimes, updatedTimes ,submit}) => {
   //updateTimes = dispatch
 
   // const [name, setName] = useState("");
@@ -42,6 +42,7 @@ const BookingForm = ({ availableTimes, updateTimes }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    submit(formData);
     setFormData({
       name: "",
       email: "",
@@ -50,16 +51,16 @@ const BookingForm = ({ availableTimes, updateTimes }) => {
       guest: "",
       occasion: "",
     });
-    alert("Booking succeeded!");
+    
   };
 
   return (
-    <div className="container">
+    <div className="Bookingcontainer" >
       {/* évite enek tsami class container khater tnajem testha9ha f barsha blayes donc hne tnajem tbadel bookingForm container wala ay haja okhra */}
       <h1>- Happy to serve you -</h1>
       <form id="bookingForm" onSubmit={handleSubmit}>
-        <div className="infor">
-          {/* infor yomkon nty tefhemha khater ketba code w taaref aaleh ama dima a9ra hseb enou code mte3k lezem yefhmou ay developer ya9rah */}
+        <div className="information">
+          {/* information yomkon nty tefhemha khater ketba code w taaref aaleh ama dima a9ra hseb enou code mte3k lezem yefhmou ay developer ya9rah */}
           <label>FullName</label>
           <input
             type="text"
@@ -71,7 +72,7 @@ const BookingForm = ({ availableTimes, updateTimes }) => {
           />
         </div>
 
-        <div className="infor">
+        <div className="information">
           <label>Email</label>
           <input
             type="email"
@@ -83,7 +84,7 @@ const BookingForm = ({ availableTimes, updateTimes }) => {
           />
         </div>
 
-        <div className="infor">
+        <div className="information">
           <label htmlFor="res-date">Choose date</label>
           <input
             name="date"
@@ -94,8 +95,8 @@ const BookingForm = ({ availableTimes, updateTimes }) => {
             onChange={(e) => handleChange(e)}
           />
         </div>
-
-        <div className="infor">
+{updatedTimes && 
+        <div className="information">
           <label htmlFor="res-time">Choose time</label>
           <select
             name="time"
@@ -103,7 +104,7 @@ const BookingForm = ({ availableTimes, updateTimes }) => {
             value={formData.time}
             onChange={(e) => handleChange(e)}
           >
-            {availableTimes.map((availableTime) => (
+            {updatedTimes.map((availableTime) => (
               <option key={availableTime} value={availableTime}>
                 {availableTime}
               </option>
@@ -111,7 +112,8 @@ const BookingForm = ({ availableTimes, updateTimes }) => {
           </select>
         </div>
 
-        <div className="infor">
+        }
+        <div className="information">
           <label htmlFor="guests">Number of guests</label>
           <input
             name="guest"
@@ -125,7 +127,7 @@ const BookingForm = ({ availableTimes, updateTimes }) => {
           />
         </div>
 
-        <div className="infor">
+        <div className="information">
           <label htmlFor="occasion">Occasion</label>
           <select
             name="occasion"

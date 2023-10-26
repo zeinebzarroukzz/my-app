@@ -11,15 +11,14 @@ const Login = (props) => {
   }
   return (
     <>
-    <div className="formcontainer">
+    <div className='form' style={{height: "100vh", width:"100vw", display:"grid", placeContent:"center"}}>
       <h1>-Login-</h1>
         <section className='formContainer'>
             <form onSubmit={handleSubmit} className='formLogin'>
               <label htmlFor='email'>Email:</label>
               <input value={email} 
               onChange={(e)=>setEmail}
-              type='email'
-              placeholder='...@.com'>
+              type='email'>
               </input>
               <label htmlFor="password">Mot de passe :</label>
           <input

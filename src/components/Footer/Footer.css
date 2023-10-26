@@ -77,6 +77,7 @@ footer {
 .navigation{
   list-style-type: disc; /* Utilisez 'disc' pour les puces rondes, 'circle' pour les cercles vides, ou 'square' pour les carrés vides */
   padding-left: 20px;
+  margin: 5%;
 }
 
 .social-media img {

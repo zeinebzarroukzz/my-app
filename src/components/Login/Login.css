@@ -1,7 +1,5 @@
-*{
-  font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.formcontainer {
+
+.form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,7 +14,7 @@
     text-align: left;
     border: 3px solid rgba(245, 232, 59, 0.986);
     background: #fafaf8ce;
-    width: 250px;
+    width: 30vw;
     min-height: 300px;
     height: auto;
     border-radius: 5px;
@@ -92,5 +90,8 @@
     #btn1,
     #btn2 {
       font-size: 20px; /* Adjust button font size */
+    }
+    .formContainer{
+      width: 80vw;
     }
   }
