@@ -54,12 +54,12 @@ const Menus = () => {
       price: "12$",
     },
     {
-      HotDisname: "Fav Pasta",
+      HotDishname: "Fav Pasta",
       img: "./menuPhotos/pasta-1264056_1280.jpg",
       price: "20$",
     },
     {
-      HotDisname: "Posh Fish",
+      HotDishname: "Posh Fish",
       img: "./menuPhotos/fish-8031138_1280.jpg",
       price: "18$",
     },
@@ -131,13 +131,13 @@ const Menus = () => {
                 className="swiper-button-next swiper-navBtn"
                 onClick={()=>scrollRight(ref1)}
               >
-                Next
+                &gt;
               </button>
               <button
                 className="swiper-button-prev swiper-navBtn"
                 onClick={()=>scrollLeft(ref1)}
                 >
-                Prev
+                &lt;
               </button>
                 </div>
                </div>
@@ -168,13 +168,13 @@ const Menus = () => {
                 className="swiper-button-next swiper-navBtn"
                 onClick={()=>scrollRight(ref2)}
               >
-                Next
+                &gt;
               </button>
               <button
                 className="swiper-button-prev swiper-navBtn"
                 onClick={()=>scrollLeft(ref2)}
               >
-                Prev
+                &lt;
               </button>
               </div>
               </div>
@@ -205,13 +205,13 @@ const Menus = () => {
                 className="swiper-button-next swiper-navBtn"
                 onClick={()=>scrollRight(ref3)}
               >
-                Next
+                &gt;
               </button>
               <button
                 className="swiper-button-prev swiper-navBtn"
                 onClick={()=>scrollLeft(ref3)}
               >
-                Prev
+                &lt;
               </button>
               </div>
               </div>
@@ -247,7 +247,7 @@ function FoodCard({ name, price, img }) {
 
       <div className="card-content">
         <h2 className="name">{name}</h2>
-        <p className="description">{price}</p>
+        <p className="price">{price}</p>
 
         
       </div>

@@ -7,7 +7,6 @@
     background-size: cover; /* Ajuste la taille de l'image pour couvrir tout l'élément */
     background-position:top; /* Centre l'image horizontalement et verticalement */
     background-repeat: no-repeat;
-    color: #fff;
     height:80vh;
     padding: 20px; 
 }
@@ -32,7 +31,7 @@
     text-align: center;
   }
   .seconddescription {
-    background:#ffffff8f;
+    background: rgba(245, 222, 179, 0.521);
     border-radius: 10px;
     width: 50%;
     margin: 0 auto; /* Centre l'élément horizontalement */

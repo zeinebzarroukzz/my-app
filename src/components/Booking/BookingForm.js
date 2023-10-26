@@ -64,7 +64,7 @@ const BookingForm = ({ availableTimes, updateTimes, updatedTimes ,submit}) => {
           <label>FullName</label>
           <input
             type="text"
-            placeholder="Enter your fullname"
+            placeholder="Your Fullname"
             id="name"
             name="name"
             value={formData.name}
@@ -77,7 +77,7 @@ const BookingForm = ({ availableTimes, updateTimes, updatedTimes ,submit}) => {
           <input
             type="email"
             name="email"
-            placeholder="...@gmail.com"
+            placeholder="Email Adress"
             id="email"
             value={formData.email}
             onChange={(e) => handleChange(e)}
@@ -143,7 +143,7 @@ const BookingForm = ({ availableTimes, updateTimes, updatedTimes ,submit}) => {
           </select>
         </div>
         <div className="btnContainer">
-          <input id="btn" type="submit" value="Make Your Reservation" />
+          <input   id="btn" type="submit" value="Make Your Reservation" />
         </div>
       </form>
     </div>

@@ -51,23 +51,19 @@
     background-color: #f4ce14;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
     font-size: 25px;
   }
-  #btn2{
-    justify-content: center;
+  #link{
+    text-align: center;
     padding: 5%;
-    margin: 2px;
-    background: #fafaf8ce;
     color: #000000;
-    border: none;
-    border-radius: 5px;
     cursor: pointer;
     font-size: 20px;
   }
   
-  #btn1:hover,#btn2:hover{
+  #btn1:hover{
         background-color:rgb(240, 250, 100)
     
   }

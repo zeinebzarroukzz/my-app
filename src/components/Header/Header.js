@@ -8,7 +8,7 @@ const Header = (props) => {
         <div className='d1'>
             <h1 className='firsttitle'>Little Lemon</h1>
             <h2 className='subtitle'>Chicago</h2>
-            <p className='descriptionResto'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id odio sodales nunc laoreet feugiat. Aliquam quis tincidunt nunc. Aenean efficitur efficitur augue, ac rhoncus augue tincidunt eget.</p>
+            <p className='descriptionResto'>Charming and inviting restaurant that offers a delightful culinary experience. Nestled in the heart of the city, our restaurant is a place where flavors and aromas come together to create a memorable dining adventure.</p>
             <button className='btn'>reserve a table</button>
         </div>
         <div className='first_img'>

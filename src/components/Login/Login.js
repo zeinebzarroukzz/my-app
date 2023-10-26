@@ -32,7 +32,8 @@ const Login = (props) => {
              <button id="btn1">Login</button>
           </div>
             </form>
-            <button id='btn2' onClick={() =>props.onFormSwitch('SignIn')}>Don't have an account ? Register here</button>
+            <a id='link' href="#" onClick={() => props.onFormSwitch('SignIn')}>
+              Don't have an account? Register here</a>
         </section>
 
     </div>

@@ -44,16 +44,17 @@
     color: orange;
   }
   .specials_2 .colmenu h2 {
-    font-size: 20px; /* Ajustez la taille de la police du titre */
+    font-size: 25px; /* Ajustez la taille de la police du titre */
   }
   
-  .specials_2 .colmenu button {
+  .orderadelivery{
     background-color: #ffffff; /* Couleur de fond du bouton */
     color: rgb(0, 0, 0); /* Couleur du texte du bouton */
+    font-size: 15px;
     border: 2px solid #ffcc00;
     padding: 15px 30px; /* Ajustez la taille du bouton */
     margin: 5%;
-    border-radius: 5px; /* Supprimez la bordure du bouton */
+    border-radius: 50px; /* Supprimez la bordure du bouton */
     cursor: pointer; /* Changez le curseur au survol */
     transition: background-color 0.3s; /* Ajoutez une transition de couleur de fond */
     text-transform: capitalize;
